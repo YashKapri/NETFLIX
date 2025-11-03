@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Set Up Payment - Netflix</title>
+    <style>
+        .pay-option {
+            background-color: #333;
+            border: 1px solid #444;
+            transition: all 0.2s ease-in-out;
+        }
+        .pay-option:hover {
+            background-color: #444;
+            transform: scale(1.02);
+            border-color: #e50914;
+        }
+        .pay-option-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #1a1a1a;
+        }
+    </style>
+</head>
+<body class="bg-black min-h-screen flex flex-col text-white">
+
+    <header class="h-[90px] flex items-center px-8 border-b border-gray-800">
+        <a href="index.html">
+            <img src="img/logo.svg" alt="Netflix" class="w-[155px] h-[40px]">
+        </a>
+        <a href="login.html" class="ml-auto bg-[#e50914] text-[0.875rem] w-[76px] h-[32px] rounded-md font-semibold flex items-center justify-center text-white hover:bg-[#f40612] transition-colors">Sign In</a>
+    </header>
+
+    <main class="flex-grow flex justify-center items-start py-12 px-4">
+        <div class="w-full max-w-xl p-8 bg-[#1f1f1f] rounded-lg shadow-2xl">
+            <p class="text-sm text-gray-400 mb-2">STEP 3 OF 3</p>
+            <h1 class="text-3xl font-bold mb-3">Choose how to pay</h1>
+            <p class="text-lg text-gray-300 mb-8">Your payment is encrypted and you can easily change your payment method at any time.</p>
+            
+            <p class="text-xl font-semibold mb-4">Secure online payment:</p>
+
+            <div class="space-y-4">
+                
+                <a href="#" class="flex items-center justify-between p-4 rounded-lg pay-option">
+                    <span class="text-lg font-medium">Credit or Debit Card</span>
+                    <div class="flex space-x-2">
+                        <div class="pay-option-icon">💳</div>
+                        <div class="pay-option-icon">Visa</div>
+                        <div class="pay-option-icon">Mastercard</div>
+                    </div>
+                </a>
+
+                <a href="#" class="flex items-center justify-between p-4 rounded-lg pay-option">
+                    <span class="text-lg font-medium">UPI AutoPay</span>
+                    <div class="flex space-x-2">
+                        <div class="pay-option-icon">🅿️</div>
+                        <div class="pay-option-icon">Google Pay</div>
+                    </div>
+                </a>
+
+                <a href="#" class="flex items-center justify-between p-4 rounded-lg pay-option">
+                    <span class="text-lg font-medium">Net Banking (IMPS/Bank Transfer)</span>
+                    <div class="pay-option-icon">🏦</div>
+                </a>
+
+            </div>
+
+            <p class="text-sm text-gray-500 mt-6">By clicking the "Start Membership" button below, you agree to our Terms of Use and Privacy Policy. Your membership will start immediately.</p>
+
+            <button type="submit" class="bg-[#e50914] text-white w-full py-4 text-xl font-semibold rounded-md mt-6 hover:bg-[#f40612] transition-colors">
+                Start Paid Membership
+            </button>
+        </div>
+    </main>
+    
+    <footer class="bg-[#141414] py-8 text-[#8c8c8c] border-t border-gray-800">
+        <div class="max-w-xl mx-auto px-4">
+            Questions? Call <a href="tel:000-800-919-1743" class="hover:underline">000-800-919-1743</a>
+            <ul class="grid grid-cols-2 sm:grid-cols-4 text-sm mt-4 gap-y-2">
+                <li><a href="#" class="hover:underline">FAQ</a></li>
+                <li><a href="#" class="hover:underline">Privacy</a></li>
+                <li><a href="#" class="hover:underline">Cookie Preferences</a></li>
+                <li><a href="#" class="hover:underline">Corporate Information</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
